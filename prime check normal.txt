@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+ int prime(int p)
+ {
+   int c=0,j;
+   j=ceil(sqrt(p));
+   for(int i=2;i<=j;i++)
+   {
+       if(p%i==0)
+       {
+         c=1;
+         break;
+       }
+   }
+   if(p==1)
+        c=0;
+
+   return c;
+ }
+ int main()
+ {
+      int a;
+      scanf("%d",&a);
+
+      if(prime(a)==0)
+      printf("prime");
+      else
+      printf("not prime");
+      return 0;
+ }

@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    char sa[1000];
+    int i;
+    scanf("%s",sa);
+    for(i=0;sa[i]!='\0';++i);
+    printf("lenth holo je %d",i);
+    return 0;
+}

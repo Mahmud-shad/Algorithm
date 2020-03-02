@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int i,j,a,c,flag;
+    scanf("%d",&a);
+    if(a>1)
+    for(i=2;i<=a;i++)
+    {
+        flag=1;
+        c=ceil(sqrt(i));
+        for(j=2;j<=c;j++)
+        {
+            if(i%j==0)
+            {
+                flag=0;
+                break;
+            }
+        }
+        if(flag==1)
+        {
+            printf("%d\t",i);
+        }
+    }
+    else if(a==1){
+        printf("o en e=one");
+    }
+    else
+        printf("invalid input");
+    return 0;
+}
